@@ -30,6 +30,12 @@ Other than including the HiDPI.js library (and any dependencies - jQuery and pos
 <script src="js/hidpi.js"></script>
 ```
 
+## FAQ
+
+### I'm not seeing HiDPI images!
+
+HiDPI.js only runs when it needs to. If the container for your image is smaller than the HiDPI "breakpoint" (currently set in hidpi.js as "HIDPI_BREAKPOINT" at 1024 pixels wide), then HiDPI will NOT attempt to load the HiDPI version of that image, and your original image will continue to be displayed. To test HiDPI.js, either make sure your containers are wide enough on-screen, or lower the HiDPI breakpoint by editing the variable inside hidpi.js. 
+
 
 ## Disclaimer
 
